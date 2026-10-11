@@ -1,6 +1,6 @@
  # 🎓 Cooperative Training Management System (CTMS)
 
-A web-based platform designed to manage cooperative training programs — connecting students, supervisors, and training institutions through a centralized, easy-to-use system.
+A web-based platform designed to manage cooperative training programs — connecting **trainees**, **training supervisors**, **training coordinators**, and **training institutions** through a centralized, easy-to-use system.
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
@@ -11,9 +11,41 @@ A web-based platform designed to manage cooperative training programs — connec
 
 ## 📌 Overview
 
-**Cooperative Training Management System (CTMS)** is a full-stack web application built to digitize and streamline the cooperative training process. It provides an organized environment where students can register for training programs, supervisors can monitor progress, and administrators can manage institutions, records, and reports — all in one centralized platform.
+**Cooperative Training Management System (CTMS)** is a full-stack web application built to digitize and streamline the cooperative training process. It provides an organized environment where **trainees**, **training supervisors**, **training coordinators**, and **training institutions** can interact and manage the entire training lifecycle — from registration to evaluation — all in one centralized platform.
 
 The system is developed using **PHP**, **MySQL**, and modern web technologies, following clean coding practices and a modular architecture for maintainability and scalability.
+
+> 💡 **Note:** This system was developed personally for the graduation project of female students, and it fully supports the four main roles involved in the cooperative training process.
+
+---
+
+## 🎯 System Roles
+
+The system is built around **four main roles**, each with its own dashboard and permissions:
+
+### 1️⃣ المتدربات — Trainees
+- Register and manage personal profiles.
+- Apply for cooperative training opportunities.
+- Submit training reports and required documents.
+- Track training progress and receive feedback.
+
+### 2️⃣ المشرف التدريبي — Training Supervisor
+- Monitor assigned trainees and their progress.
+- Review and evaluate submitted reports.
+- Provide feedback and final evaluations.
+- Communicate with trainees and coordinators.
+
+### 3️⃣ المنسقة التدريبية — Training Coordinator
+- Manage the overall training program.
+- Assign trainees to supervisors and institutions.
+- Coordinate between all parties.
+- Generate reports and monitor the entire process.
+
+### 4️⃣ الجهة التدريبية — Training Institution
+- Register training opportunities and available seats.
+- Receive and manage trainee applications.
+- Evaluate trainees during and after training.
+- Provide official training completion certificates.
 
 ---
 
@@ -22,18 +54,19 @@ The system is developed using **PHP**, **MySQL**, and modern web technologies, f
 The system provides a complete set of features to manage the entire cooperative training lifecycle:
 
 ### 👤 User Management
-- **Multi-Role System:** Separate access for Students, Supervisors, and Admins.
+- **Multi-Role System:** Separate dashboards for Trainees, Supervisors, Coordinators, and Institutions.
 - **Secure Authentication:** Login system with hashed passwords and session management.
 - **Profile Management:** Each user can manage their own profile and information.
 
 ### 🎓 Training Management
-- **Training Registration:** Students can register for cooperative training programs.
-- **Institution Management:** Admins can add and manage training institutions.
-- **Supervisor Assignment:** Assign supervisors to students and institutions.
-- **Progress Tracking:** Monitor student progress and training status.
+- **Training Registration:** Trainees can register for cooperative training programs.
+- **Institution Management:** Coordinators can add and manage training institutions.
+- **Supervisor Assignment:** Assign supervisors to trainees and institutions.
+- **Progress Tracking:** Monitor trainee progress and training status.
+- **Report Submission:** Trainees can upload weekly and final reports.
 
 ### 📊 Reports & Analytics
-- **Student Reports:** Generate detailed reports on student performance.
+- **Trainee Reports:** Generate detailed reports on trainee performance.
 - **Attendance Tracking:** Track attendance and participation.
 - **Export Options:** Export data for administrative use.
 
@@ -86,7 +119,7 @@ Security was a priority throughout the development of this system. The following
 
 ### 🛡️ Authentication & Authorization
 - **Secure Login:** Passwords hashed using strong algorithms.
-- **Role-Based Access:** Different permissions for Students, Supervisors, and Admins.
+- **Role-Based Access Control (RBAC):** Different permissions for Trainees, Supervisors, Coordinators, and Institutions.
 - **Session Management:** Secure session tokens with expiration.
 
 ### 🔒 Data Protection
@@ -125,9 +158,15 @@ The system follows a **modular architecture**:
 ### 📊 Data Flow
 
 ```
-User Request → index.php → Module → Database (MySQL)
-                  ↓
-User Response ← View ← Module ← Database
+Trainee / Supervisor / Coordinator / Institution
+                    ↓
+              index.php
+                    ↓
+                Modules
+                    ↓
+          Database (MySQL)
+                    ↓
+         Response → View → User
 ```
 
 ---
@@ -191,6 +230,10 @@ This project was developed as part of the academic requirements for the Bachelor
 
 ### 🏫 University
 - **Al-Hikma University**, Dhamar, Yemen.
+
+### 🎯 Purpose
+- Developed personally for the **graduation project of female students**.
+- Designed to fully support the four main roles in the cooperative training process.
 
 ### 📅 Timeline
 - **Duration:** 2024 – 2025.
